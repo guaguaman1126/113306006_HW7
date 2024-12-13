@@ -1,0 +1,148 @@
+/* 全局樣式 */
+body {
+    background-color: #eeede1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    margin: 0;
+    font-family: Arial, sans-serif;
+}
+
+#namebutton {
+    height: 20px;
+    width: auto;
+    padding: 0px 15px;
+    font-size: 14px;
+    display: block;
+    margin-top: 26px;
+}
+.main-container {
+    display: flex;
+    width: 100%;
+    height: auto;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+/* 左邊面板 */
+.left-panel {
+    width: 30%;
+    background-color: #f0f0f0;
+    display: flex;
+    flex-direction: column;
+    height: auto;
+}
+
+.photo-panel img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.text-content {
+    flex: 1;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+/* 右邊面板 */
+.right-panel {
+    width: 70%;
+    padding: 20px;
+    background-color: #ffffff;
+    height:auto;
+}
+
+h2 {
+    border-bottom: 2px solid #ccc;
+    margin-bottom: 10px;
+    padding-bottom: 5px;
+}
+
+#name {
+    border-bottom: 2px;
+    margin-bottom: 0px;
+    padding-bottom: 0px;
+}
+
+#linkdiv{
+    display: flex;
+    flex-direction: column; /* 垂直排列 */
+    align-items: center;    /* 中心對齊 */
+    
+}
+
+.album-row {
+     display: flex;
+     justify-content: space-between;
+    flex-wrap: wrap;
+}
+.album-item {
+      text-align: center;
+      margin: 10px;
+}
+
+.album-row img {
+    width: 100px;
+    height: 100px;
+    object-fit: cover;
+}
+.description {
+     margin-top: 2px;
+     font-size: 10px;
+ }
+
+
+
+
+/* 手機排版調整 */
+@media (max-width: 768px) {
+    
+    .photo-panel {
+    height: 300px; /* 根據需求調整高度 */
+    background-image: url('1280.jpeg');
+    background-size: cover; /* 或 contain */
+    background-position: center;
+    }
+
+
+    
+    .main-container {
+        flex-direction: column;
+        height: 100%;
+    }
+
+    .left-panel,
+    .right-panel {
+        width: auto;
+    }
+
+    .left-panel {
+        margin-bottom: 20px;
+    }
+
+    h2 {
+        font-size: 1.2em;
+    }
+    h1 {
+        margin-bottom: 400px;
+    }
+    .album-row img {
+        width: 80px;
+        height: 80px;
+    }
+
+    .description {
+        font-size: 12px;
+    }
+
+    body {
+        padding: 10px;
+    }
+
+    .text-content {
+        padding: 10px;
+    }
+}
