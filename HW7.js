@@ -107,12 +107,17 @@ function addLink() {
             divElement.append(aElement,pElement);
             parentDiv.append(divElement); // 添加到父元素中
 
+            //我要如何把這個div放到button前，讓增加按鈕永遠在最後
+
+
             // 移除輸入框
             inputElement1.remove();
             inputElement2.remove();
 
             // 恢復按鈕文字
             linkButton.value = 'add';
+            parentDiv.insertBefore(divElement, linkdiv);
+
         }
     }
 }
